@@ -8,17 +8,17 @@ import ErrorMessage from "../components/ErrorMessage/ErrorMessage";
 import ImageGallery from "../components/imageGallery/ImageGallery";
 import LoadMoreBtn from "../components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "../components/ImageModal/ImageModal";
-import { GetPhotosResponse, ImageData } from "./App.types";
+import { GetPhotosResponse, ImageDataUnspl } from "./App.types";
 
 const App = () => {
   const [query, setQuery] = useState<string>("");
   const [page, setPage] = useState<number>(1);
-  const [images, setImages] = useState<ImageData[]>([]);
+  const [images, setImages] = useState<ImageDataUnspl[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [selectedImage, setSelectedImage] = useState<ImageData | null>(null); // Стан для модального вікна
+  const [selectedImage, setSelectedImage] = useState<ImageDataUnspl | null>(null); // Стан для модального вікна
 
   useEffect(() => {
     if (!query) return;

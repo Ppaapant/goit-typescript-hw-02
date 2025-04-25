@@ -1,22 +1,7 @@
-interface ImageUser {
-    name: string;
-  }
-  
-   interface ImageUrls {
-    small: string;
-    regular: string;
-    full: string;
-  }
-  
-  export interface ImageData {
-    urls: ImageUrls;
-    alt_description: string;
-    user: ImageUser;
-    likes: number;
-    id: string;
-  }
+import { ImageDataUnspl } from "../../App/App.types";
+
   
   export interface ImageProps{
-    image: ImageData | null;
+    image: ImageDataUnspl | null;
     onClose: () => void;
   }

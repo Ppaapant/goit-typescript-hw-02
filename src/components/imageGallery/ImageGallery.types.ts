@@ -1,5 +1,5 @@
-import { ImageData } from "../../App/App.types";
+import { ImageDataUnspl} from "../../App/App.types";
 export interface ImageGalleryProps{
-    images: ImageData[];
-    onImageClick: (image: ImageData) => void;
+    images: ImageDataUnspl[];
+    onImageClick: (image: ImageDataUnspl) => void;
   }

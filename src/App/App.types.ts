@@ -1,4 +1,4 @@
-export interface ImageData {
+export interface ImageDataUnspl {
     id: string;
     urls: {
       small: string;

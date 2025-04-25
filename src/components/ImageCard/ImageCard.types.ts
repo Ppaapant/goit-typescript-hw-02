@@ -1,6 +1,7 @@
+import { ImageDataUnspl } from "../../App/App.types";
 
 
 export interface ImageCardProps{
-    image: ImageData;
+    image: ImageDataUnspl;
     onImageClick: () => void;
   }
