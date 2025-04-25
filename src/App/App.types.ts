@@ -13,7 +13,7 @@ export interface ImageDataUnspl {
   }
 
   export interface GetPhotosResponse {
-    photos: ImageData[];
+    photos: ImageDataUnspl[];
     per_page: number;
     total_results: number;
   }
@@ -21,5 +21,5 @@ export interface ImageDataUnspl {
   export interface UnsplashApiResponse {
     total: number;
     total_pages: number;
-    results: ImageData[];
+    results: ImageDataUnspl[];
   }

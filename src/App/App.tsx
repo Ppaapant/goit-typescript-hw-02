@@ -61,7 +61,7 @@ const App = () => {
   };
 
   // Функції для відкриття/закриття модального вікна
-  const openModal = (image:ImageData) => setSelectedImage(image);
+  const openModal = (image:ImageDataUnspl) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
 
   return (
